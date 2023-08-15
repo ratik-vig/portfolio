@@ -1,0 +1,18 @@
+.notch{
+    width: 50%;
+    height: 32px;
+    background-color: black;
+    border: 1px solid black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.time-label {
+    color: #f3f3f3;
+    font-weight: 500;
+    padding: 0;
+    height: 32px;
+    margin-top: 8px;
+}

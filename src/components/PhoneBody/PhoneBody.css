@@ -1,0 +1,14 @@
+.phone-body{
+    width: 350px;
+    height: 700px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50px;
+    border: 15px solid black;
+    overflow: hidden;
+}
+
+
+

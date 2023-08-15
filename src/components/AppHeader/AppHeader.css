@@ -1,0 +1,28 @@
+.app-header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    margin-top: 8px;
+    padding: 0 0px;
+}
+
+.app-title {
+    color: #303030;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+}
+
+.header-action-button{
+    display: flex;
+    align-items: center;
+    color: #007AFF;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.header-action-button-text{
+    margin-left: 8px;
+}

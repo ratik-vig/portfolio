@@ -1,0 +1,25 @@
+.app-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(14,112,38,1) 6%, rgba(108,233,115,1) 91%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.linkedin-filter{
+    filter: invert(29%) sepia(100%) saturate(1133%) hue-rotate(175deg) brightness(95%) contrast(98%);
+}
+
+.github-icon {
+    filter: invert(15%) sepia(14%) saturate(2539%) hue-rotate(179deg) brightness(99%) contrast(91%);
+}
+
+.app-icon-label {
+    font-size: 10px;
+    color: #f3f3f3;
+    text-align: center;
+    margin-top: 4px;
+}

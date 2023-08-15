@@ -1,0 +1,16 @@
+.app-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    row-gap: 21px;
+}
+
+

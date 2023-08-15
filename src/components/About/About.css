@@ -1,0 +1,62 @@
+@keyframes openApp {
+    0% {scale: 0; opacity: 0;}
+    100% {scale: 1; opacity: 1;}
+}
+
+.details-container{
+    width: 100%;
+    margin-top: 20%;
+    margin-bottom: 0;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.profile-image-wrapper {
+    width: 145px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: #92E6A2;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-image {
+    width: 120%;
+    margin-left: -10px;
+    margin-top: 8px;
+}
+
+.name-text {
+    text-align: center;
+    color: #303030;
+    margin-top: 4px;
+}
+
+.email-text{
+    color: #a0a0a0;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.about-me-container {
+    width: 90%;
+    font-size: 14px;
+    color: #303030;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 24px;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 19px -26px rgba(0,0,0,0.1);
+}
+
+.about-text {
+    color: #303030;
+    font-size: 13px;
+}
