@@ -35,16 +35,19 @@ const PhoneWidget = () => {
     const Slider = () => {
         const [slideNo, setSlide] = useState(0)
 
-        const animateSlides = () => {
-            setTimeout(() => {
-                
-                setSlide((slideNo+1)%2)
-            }, 4001)  
+        // const animateSlides = () => {
             
-        }
+            
+        // }
 
         useEffect(() => {
-            animateSlides()
+            const timer = setTimeout(() => {
+                setSlide((slideNo+1)%2)
+            }, 4000)  
+
+            return () => {
+                clearInterval(timer)
+            }
         }, [slideNo])
 
         return (

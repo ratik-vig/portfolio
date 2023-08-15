@@ -7,6 +7,7 @@
     border-bottom-right-radius: 15px;
     margin: 0;
     padding: 0;
+    
 }
 
 .time-label {
@@ -15,4 +16,15 @@
     padding: 0;
     height: 32px;
     margin-top: 8px;
+}
+
+.earpiece{
+    width: 50px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #303030;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
