@@ -1,0 +1,28 @@
+.slider-control-wrapper{
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.chevron-button{
+    color: #007AFF;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.page-text{
+    color: #007AFF;
+    font-size: 14px;
+    padding: 0 32px;
+    border-radius: 12px;
+}
+
+.button-disable {
+    pointer-events: none;
+    opacity: 0.5;
+}
