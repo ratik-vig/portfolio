@@ -1,5 +1,6 @@
 import './PhoneNotch.css'
 const PhoneNotch = ({bgColor}) => {
+    console.log(bgColor)
     return(
         <div style={{ display: 'flex', alignItems: 'flex-start', backgroundColor: bgColor}}>
             <div className='time-label' style={{width: 87, top: 0, textAlign: 'center'}}>

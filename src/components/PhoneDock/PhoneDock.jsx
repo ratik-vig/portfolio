@@ -6,12 +6,13 @@ import { FontAwesomeIcon, } from '@fortawesome/react-fontawesome'
 import './PhoneDock.css'
 import PhoneApps from '../PhoneApps/PhoneApps'
 
-const PhoneDock = () => {
+const PhoneDock = ({setApp}) => {
     return(
         <div className='phone-dock'>
             <div className='dock-row'>
                 <PhoneApps 
                     icon={<FontAwesomeIcon icon={faPhone} style={{color: 'white', fontSize: 24}}/>}
+                    handleClick={() => setApp(3)}
                 />
                 <PhoneApps 
                     icon={<img src={LinkedIn} style={{width: 36, height: 36, zIndex: 2}}/>}

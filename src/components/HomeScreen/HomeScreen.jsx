@@ -12,7 +12,7 @@ const HomeScreen = ({setApp}) => {
    
     return (
         <div style={{marginTop: 32}} >
-            <PhoneDock />
+            <PhoneDock setApp={setApp} />
             <div className="app-grid">
                 <PhoneWidget />
                 <PhoneApps 

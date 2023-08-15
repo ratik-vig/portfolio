@@ -26,3 +26,21 @@
 .header-action-button-text{
     margin-left: 8px;
 }
+
+.header-icon-button {
+    background: #303030;
+    opacity: 0.6;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(243, 243, 243, 0.27);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+    cursor: pointer;
+    color: #f3f3f3;
+}

@@ -43,7 +43,7 @@ const Education = ({setApp}) => {
     ]
     return(
         <div style={{ height: '100%', overflow: 'scroll', backgroundColor: '#f5f5f7', animation: 'openApp 0.2s'}}>
-            <AppHeader setApp={setApp} appTitle={"Education"}/>
+            <AppHeader setApp={setApp} appTitle={"Education"}  />
             <div className='details-container'>
                 <CardSlider data={data}/>
                 {/* <Lists listItems={coursesMasters} /> */}
