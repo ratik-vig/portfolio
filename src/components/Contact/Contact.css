@@ -26,9 +26,9 @@
     transform: translateX(-50%);
     margin-top: 24px;
     background-color: #fff;
-    padding: 0 8px;
     border-radius: 10px;
     box-shadow: 0px 10px 19px -26px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
 
 .heading-text {
@@ -42,10 +42,27 @@
 }
 
 .details-list-item {
-    padding: 8px 0;
+    padding: 8px ;
     border-bottom: 1px solid #d3d3d3;
+    position: relative;
 }
 
 .details-list-item:nth-last-child(1){
     border: none;
+}
+
+.details-list-item:active .active-overlay{
+    display: block;
+}
+
+.active-overlay{
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -10%;
+    background-color: #303030;
+    opacity: 0.3;
+    border-radius: 10px;
+    display: none;
 }
