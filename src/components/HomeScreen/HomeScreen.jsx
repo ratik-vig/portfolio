@@ -34,6 +34,9 @@ const HomeScreen = ({setApp}) => {
                     icon={<FontAwesomeIcon icon={faBriefcase} style={{color: '#fff', fontSize: 24}}/>}
                     iStyle={{background: `linear-gradient(0deg, rgba(121,15,161,1) 0%, rgba(201,125,224,1) 34%)`}}
                     label={"Work Exp."}
+                    handleClick={() => {
+                        setApp(4)
+                    }}
                 />
                 <PhoneApps 
                     icon={<FontAwesomeIcon icon={faLaptopCode} style={{color: '#303030', fontSize: 24}}/>}

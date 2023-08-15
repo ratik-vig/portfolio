@@ -33,11 +33,15 @@ const Education = ({setApp}) => {
             graduation: 'June 2020',
             gpa: '8.1/10.0',
             courses: [
+                "Introduction to Programming using Python",
+                "Computer Networks",
+                "Operating Systems",
                 "Data Structures and Algorithms",
-                "Database Design and Principles",
-                "Internet Architecture and Protocols",
-                "Realtime Embedded Systems",
-                "Computer Systems Architecture"
+                "Software Engineering",
+                "Database Systems",
+                "Discrete Mathematics",
+                "Artificial Intelligence and Machine Learning",
+                "Deep Learning"
             ]
         }
     ]

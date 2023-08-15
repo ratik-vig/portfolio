@@ -8,6 +8,7 @@ import {useEffect, useState} from 'react'
 import 'font-awesome/css/font-awesome.min.css';
 import Education from './components/Education/Education';
 import Contact from './components/Contact/Contact';
+import WorkExperience from './components/WorkExperience/WorkExperience';
 
 function App() {
   const [app, setApp] = useState(0)
@@ -19,6 +20,7 @@ function App() {
       case 1: return <About setApp={setApp} />
       case 2: return <Education setApp={setApp} />
       case 3: return <Contact setApp={setApp} />
+      case 4: return <WorkExperience setApp={setApp} />
     }
   }
  

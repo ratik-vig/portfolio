@@ -1,7 +1,7 @@
 import cartoon from '../../cartoon.png'
 import ActionSheet from '../ActionSheet/ActionSheet'
 import AppHeader from '../AppHeader/AppHeader'
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 import './Contact.css'
 
 const DetailsWrapper = ({ data, handleClick }) => {
@@ -33,6 +33,16 @@ const Contact = ({setApp}) => {
     ]
 
     const [showActionSheet, setShow] = useState(false)
+
+    useEffect(() => {
+        const ref = document.getElementsByClassName('contact-page')
+
+        if(showActionSheet){
+            ref[0].style.overflow = 'hidden'
+        }else{
+            ref[0].style.overflow = 'scroll'
+        }
+    }, [showActionSheet])
 
     return(
         <div className='contact-page' style={{animation: 'openApp 0.2s'}}>

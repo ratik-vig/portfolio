@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './ActionSheet.css'
 
 const ActionSheet = ({showActionSheet, setShow}) => {
+    
     return(
         showActionSheet && <>
         <div className='overlay'></div>
