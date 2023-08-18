@@ -1,8 +1,10 @@
 import './Education.css'
 import AppHeader from '../AppHeader/AppHeader'
-import nyu from '../../nyu.png'
 import CardSlider from '../CardSlider/CardSlider'
 import Lists from '../Lists/Lists'
+import nyu from '../../nyu.png'
+import bennett from '../../bennettLogo.gif'
+
 const Education = ({setApp}) => {
     const coursesMasters = [
         "Data Structures and Algorithms",
@@ -16,6 +18,7 @@ const Education = ({setApp}) => {
             id: 1,
             name: 'New York University',
             degree: `Master's in Computer Engineering`,
+            logo: nyu,
             graduation: 'May 2024',
             gpa: '3.89/4.0',
             courses: [
@@ -30,6 +33,7 @@ const Education = ({setApp}) => {
             id: 2,
             name: 'Bennett University',
             degree: `Bachelor's in Computer Science`,
+            logo: bennett,
             graduation: 'June 2020',
             gpa: '8.1/10.0',
             courses: [

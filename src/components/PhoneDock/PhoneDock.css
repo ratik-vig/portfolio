@@ -4,7 +4,7 @@
     border-radius: 30px;
     position: absolute;
     bottom: 8px;
-    background: rgba(255, 255, 255, 0.27);
+    background: rgba(255, 255, 255, 0.37);
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
     left: 50%;
@@ -22,5 +22,19 @@
 .linkedin-icon {
     background: #0277b5;
     overflow: hidden;
+}
+
+.name-capsule{
+    position: absolute;
+    bottom: 110%;
+    background: rgba(58, 171, 204, 0.77);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    padding: 4px 22px;
+    border-radius: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f3f3f3;
+    font-size: 14px;
 }
 

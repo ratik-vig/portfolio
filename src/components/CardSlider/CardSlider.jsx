@@ -1,6 +1,6 @@
 import './CardSlider.css'
-import nyu from '../../nyu.png'
-import bennett from '../../bennettLogo.gif'
+// import nyu from '../../nyu.png'
+// import bennett from '../../bennettLogo.gif'
 import Lists from '../Lists/Lists'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
@@ -9,8 +9,9 @@ import {useEffect, useState} from 'react'
 const Card = ({item}) => {
     return (
         <div style={{width: '100%'}}>
-            <img src={item.id === 1 ? nyu : bennett} style={{width: '60%', marginLeft: '50%', transform: `translateX(-50%)`, borderRadius: 10, backgroundColor: '#303030'}} />
+            <img src={item.logo} style={{width: 150, height: 150, marginLeft: '50%', transform: `translateX(-50%)`, borderRadius: 10, backgroundColor: '#303030'}} />
             <h2 style={{fontSize: 16, color: '#303030', textAlign: 'center'}}>{item.name}</h2>
+            <p style={{fontSize: 14, color: '#303030', textAlign: 'center'}}>{item.location}</p>
             <p style={{fontSize: 14, color: '#303030', textAlign: 'center'}}>{item.degree}</p>
             <p style={{fontSize: 12, color: '#303030', textAlign: 'center'}}>{item.graduation}</p>
             {item.gpa && <p style={{fontSize: 14, color: '#303030', textAlign: 'center', fontWeight: 'bold'}}>{`GPA ${item.gpa}`}</p>}

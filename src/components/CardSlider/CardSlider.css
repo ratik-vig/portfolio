@@ -26,3 +26,9 @@
     pointer-events: none;
     opacity: 0.5;
 }
+
+@media only screen and (max-width: 600px){
+    .slider-control-wrapper{
+        bottom: 4px;
+    }
+}

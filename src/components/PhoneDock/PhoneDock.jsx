@@ -9,6 +9,9 @@ import PhoneApps from '../PhoneApps/PhoneApps'
 const PhoneDock = ({setApp}) => {
     return(
         <div className='phone-dock'>
+            <div className='name-capsule'>
+                <p>Ratik Vig</p>
+            </div>
             <div className='dock-row'>
                 <PhoneApps 
                     icon={<FontAwesomeIcon icon={faPhone} style={{color: 'white', fontSize: 24}}/>}

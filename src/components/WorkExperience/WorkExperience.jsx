@@ -1,5 +1,9 @@
 import AppHeader from '../AppHeader/AppHeader'
 import CardSlider from '../CardSlider/CardSlider'
+import tft from '../../tftlogo.jpeg'
+import cloudfabrica from '../../cloudfabrica.jpeg'
+import datablock from '../../datablock.jpeg'
+
 import './WorkExperience.css'
 
 const WorkExperience = ({ setApp }) => {
@@ -7,52 +11,26 @@ const WorkExperience = ({ setApp }) => {
         {
             id: 1,
             name: 'Think Future Technologies',
+            location: 'Gurgaon, India',
+            logo: tft,
             degree: `Software Engineer`,
             graduation: 'August 2020 - July 2022',
-            // gpa: '3.89/4.0',
-            // courses: [
-            //     "Data Structures and Algorithms",
-            //     "Database Design and Principles",
-            //     "Internet Architecture and Protocols",
-            //     "Realtime Embedded Systems",
-            //     "Computer Systems Architecture"
-            // ]
+            
         },
         {
             id: 2,
-            name: 'Bennett University',
-            degree: `Bachelor's in Computer Science`,
-            graduation: 'June 2020',
-            gpa: '8.1/10.0',
-            courses: [
-                "Introduction to Programming using Python",
-                "Computer Networks",
-                "Operating Systems",
-                "Data Structures and Algorithms",
-                "Software Engineering",
-                "Database Systems",
-                "Discrete Mathematics",
-                "Artificial Intelligence and Machine Learning",
-                "Deep Learning"
-            ]
+            name: 'Datablock Technologies',
+            location: `Noida, India`,
+            logo: datablock,
+            graduation: 'Jan 2020 - May 2020',
+            
         },
         {
-            id: 2,
-            name: 'Bennett University',
-            degree: `Bachelor's in Computer Science`,
-            graduation: 'June 2020',
-            gpa: '8.1/10.0',
-            courses: [
-                "Introduction to Programming using Python",
-                "Computer Networks",
-                "Operating Systems",
-                "Data Structures and Algorithms",
-                "Software Engineering",
-                "Database Systems",
-                "Discrete Mathematics",
-                "Artificial Intelligence and Machine Learning",
-                "Deep Learning"
-            ]
+            id: 3,
+            name: 'Cloudfabrica Technologies',
+            location: 'Bangalore, India',
+            logo: cloudfabrica,
+            graduation: 'May 2019 - July 2019',
         }
     ]
     return(

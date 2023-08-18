@@ -40,20 +40,21 @@ const PhoneWidget = () => {
             
         // }
 
-        useEffect(() => {
-            const timer = setTimeout(() => {
-                setSlide((slideNo+1)%2)
-            }, 4000)  
+        // useEffect(() => {
+        //     const timer = setTimeout(() => {
+        //         setSlide((slideNo+1)%2)
+        //     }, 4000)  
 
-            return () => {
-                clearInterval(timer)
-            }
-        }, [slideNo])
+        //     return () => {
+        //         clearInterval(timer)
+        //     }
+        // }, [slideNo])
 
         return (
             <div className='slider'>
                 
-                {slideNo === 0 ? <Slide>
+                {/* {slideNo === 0 ?  */}
+                <Slide>
                     <div className='skill-wrapper'>
                         <img src={Java} style={{width: 42, height: 42}} />
                         {/* <FaJava style={{width: 36, height: 36}} /> */}
@@ -74,9 +75,7 @@ const PhoneWidget = () => {
                         {/* <FaReact style={{width: 36, height: 36}} /> */}
                         <p className='skill-text'>React</p>
                     </div>
-                </Slide>
-                :
-                <Slide>
+                    
                     <div className='skill-wrapper'>
                         <img src={NodeJS} style={{width: 42, height: 42}}/>
                         {/* <FaNodeJs style={{width: 36, height: 36}} /> */}
@@ -96,20 +95,21 @@ const PhoneWidget = () => {
                         <img src={Html5} style={{width: 42, height: 42}}/>
                         <p className='skill-text'>HTML</p>
                     </div>
-                </Slide>}
-                
-            </div>
+                </Slide>
+               </div>
         )
     }
     return (
         <div className='main-wrapper'>
             <div className='widget-wrapper'>
+                {/* <h2>Ratik Vig</h2>
+                <h4>Software Engineer</h4> */}
                 <Slider />
             </div>
-            <div style={{width: '10px',height: 120, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+            {/* <div style={{width: '10px',height: 120, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
                 <div style={{width: 4, height: 4, borderRadius: 2, backgroundColor: 'white'}}></div>
                 <div style={{width: 4, height: 4, borderRadius: 2, backgroundColor: 'white', marginTop: 8}}></div>
-            </div>
+            </div> */}
         </div>
         
     )

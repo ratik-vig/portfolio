@@ -4,6 +4,7 @@ import AppHeader from '../AppHeader/AppHeader'
 import {useEffect, useRef, useState } from 'react'
 import './Contact.css'
 import Toast from '../Toast/Toast'
+import SlideupPage from '../SlideupPage/SlideupPage'
 
 const DetailsWrapper = ({ data, handleClick }) => {
     return (
@@ -50,7 +51,10 @@ const Contact = ({setApp}) => {
     }, [showActionSheet])
 
     return(
-        <div ref={parentRef} className='contact-page' style={{animation: 'openApp 0.2s', transform: scaledown && `scale(0.9)`, borderRadius: scaledown && '10px', transition: `transform 0.25s ease`}}>
+        <>
+        {scaledown && <SlideupPage setScale={setScale} />}
+
+        <div ref={parentRef} className='contact-page' style={{animation: 'openApp 0.2s', transform: scaledown && `scale(0.9)`, borderRadius: scaledown && '10px', transition: `transform 0.25s ease`, filter: scaledown && `brightness(80%)`}}>
             {showToast && <Toast setToast={setToast} />}
             <div className='image-wrapper' style={{background: `url(${cartoon}) no-repeat`, backgroundSize: 'cover', backgroundPosition: '40%', paddingTop: '10%'}}>
                 <AppHeader setApp={setApp} appTitle={""} iconButton={true} />
@@ -63,6 +67,7 @@ const Contact = ({setApp}) => {
             </div>
             <ActionSheet parentRef={parentRef} showActionSheet={showActionSheet} setShow={setShow} />
         </div>
+        </>
     )
 }
 
