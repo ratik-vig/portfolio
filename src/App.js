@@ -25,7 +25,7 @@ function App() {
   }
  
   return (
-    <div style={{width: '100vw', height: '100vh', backgroundColor: '#2c3e50', overflow: 'scroll'}}>
+    <div style={{width: '100vw', height: '100%', backgroundColor: '#2c3e50', overflow: 'scroll'}}>
       <PhoneBody bgColor={!(app === 3 || app === 0 )? '#f5f5f7' : 'transparent'}>
         {getApp() }
         {/* <About /> */}

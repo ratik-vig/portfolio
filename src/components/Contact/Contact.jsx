@@ -1,14 +1,15 @@
 import cartoon from '../../cartoon.png'
 import ActionSheet from '../ActionSheet/ActionSheet'
 import AppHeader from '../AppHeader/AppHeader'
-import {useEffect, useState} from 'react'
+import {useEffect, useRef, useState } from 'react'
 import './Contact.css'
+import Toast from '../Toast/Toast'
 
 const DetailsWrapper = ({ data, handleClick }) => {
     return (
         <div className='details-wrapper'>
             {data.map(item => (
-                <div className='details-list-item' style={{cursor: handleClick && 'pointer'}} onClick={handleClick}>
+                <div className='details-list-item' style={{cursor: handleClick && 'pointer'}} onClick={() => handleClick && handleClick()}>
                     <p className='heading-text'>{item.tag}</p>
                     <p className='primary-text'>{item.data}</p>
                     {handleClick && <div className='active-overlay'></div>}
@@ -33,6 +34,10 @@ const Contact = ({setApp}) => {
     ]
 
     const [showActionSheet, setShow] = useState(false)
+    const [showToast, setToast] = useState(false)
+    const [scaledown, setScale] = useState(false)
+
+    const parentRef = useRef()
 
     useEffect(() => {
         const ref = document.getElementsByClassName('contact-page')
@@ -45,17 +50,18 @@ const Contact = ({setApp}) => {
     }, [showActionSheet])
 
     return(
-        <div className='contact-page' style={{animation: 'openApp 0.2s'}}>
+        <div ref={parentRef} className='contact-page' style={{animation: 'openApp 0.2s', transform: scaledown && `scale(0.9)`, borderRadius: scaledown && '10px', transition: `transform 0.25s ease`}}>
+            {showToast && <Toast setToast={setToast} />}
             <div className='image-wrapper' style={{background: `url(${cartoon}) no-repeat`, backgroundSize: 'cover', backgroundPosition: '40%', paddingTop: '10%'}}>
                 <AppHeader setApp={setApp} appTitle={""} iconButton={true} />
             </div>
             <div className='main-container'>
-                <DetailsWrapper data={mobile} />
-                <DetailsWrapper data={email} handleClick={() => {setShow(true)}}/>
+                <DetailsWrapper data={mobile} handleClick={() => {setScale(true); setToast(true)}} />
+                <DetailsWrapper data={email} handleClick={() => {setShow(true)}} />
                 <DetailsWrapper data={location} />
 
             </div>
-            <ActionSheet showActionSheet={showActionSheet} setShow={setShow} />
+            <ActionSheet parentRef={parentRef} showActionSheet={showActionSheet} setShow={setShow} />
         </div>
     )
 }

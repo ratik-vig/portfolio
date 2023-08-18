@@ -48,7 +48,7 @@ const CardSlider = ({data}) => {
             
             <div className='slider-control-wrapper'>
                 <FontAwesomeIcon icon={faChevronLeft} className={`chevron-button ${pageNo === 0 && 'button-disable'}`} onClick={() => handlePageChange(-1)}/>
-                <p className='page-text'> {`${pageNo+1} of 2`}</p>
+                <p className='page-text'> {`${pageNo+1} of ${data.length}`}</p>
                 <FontAwesomeIcon icon={faChevronRight} className={`chevron-button ${pageNo === data.length-1 && 'button-disable'}`} onClick={() => handlePageChange(1)}/>
             </div>
         </div>

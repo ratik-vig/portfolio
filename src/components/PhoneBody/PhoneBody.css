@@ -1,6 +1,7 @@
 .phone-body{
     width: 350px;
     height: 700px;
+    max-height: 700px;
     background-color: white;
     position: absolute;
     left: 50%;
@@ -11,4 +12,8 @@
 }
 
 
-
+@media only screen and (max-width: 600px) {
+    .phone-body{
+        height: 100%;
+    }
+}
