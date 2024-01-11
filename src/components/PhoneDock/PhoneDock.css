@@ -3,10 +3,11 @@
     height: 85px;
     border-radius: 30px;
     position: absolute;
-    bottom: 8px;
-    background: rgba(255, 255, 255, 0.37);
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
+    bottom: 10px;
+    background: rgba(255, 255, 255, 0.27);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* top: 50%; */
     left: 50%;
     transform: translateX(-50%);
 }

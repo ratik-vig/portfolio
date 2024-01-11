@@ -6,15 +6,55 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    /* transform: translateX(-50%); */
     transform: translate(-50%, -50%);
     border-radius: 50px;
     border: 15px solid black;
     overflow: hidden;
 }
 
+@media only screen and (max-height: 700px){
+    .phone-body{
+        position: absolute;
+        top: 0% !important;
+        left: 50% !important;
+        transform: translate(-50%, 0%) scale(0.8) !important;
+        overflow: scroll;    
+    }
+}
+
 
 @media only screen and (max-width: 600px) {
     .phone-body{
+        top: 50%;
+        transform: translate(-50%, -50);
         height: 100%;
+        min-height: 700px;
+        overflow: scroll;
+
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 950px) {
+    .phone-body{
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 700px;
+        min-height: 700px;
+        overflow: scroll;
+
+    }
+}
+
+@media only screen and (max-width: 349px) {
+    .phone-body{
+        min-width: 349px;
+       width: 100%;
+       left: 0;
+       top: 50%;
+       transform: translate(0, -50%) scale(0.8);
+       overflow: scroll;
+       min-height: 700px;
+
     }
 }

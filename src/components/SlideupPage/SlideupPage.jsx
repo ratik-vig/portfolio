@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import './SlideupPage.css'
 
-const SlideupPage = ({ setScale }) => {
+const SlideupPage = ({ setScale, title, children }) => {
 
     const closePage = () => {
         document.getElementsByClassName('slideup-page')[0].classList.add('slideup-page-close')
@@ -11,9 +11,13 @@ const SlideupPage = ({ setScale }) => {
     }
     return(
         <div className='slideup-page'>
-            <div className='cancel-button' onClick={closePage}>
-                Cancel
+            <div className='slideup-header'>
+                <p>{title}</p>
+                <div className='cancel-button' onClick={closePage}>
+                    Cancel
+                </div>
             </div>
+            {children}
         </div>
     )
 }

@@ -20,7 +20,7 @@ const Education = ({setApp}) => {
             degree: `Master's in Computer Engineering`,
             logo: nyu,
             graduation: 'May 2024',
-            gpa: '3.89/4.0',
+            gpa: '3.78/4.0',
             courses: [
                 "Data Structures and Algorithms",
                 "Database Design and Principles",

@@ -5,6 +5,7 @@ import {useEffect, useRef, useState } from 'react'
 import './Contact.css'
 import Toast from '../Toast/Toast'
 import SlideupPage from '../SlideupPage/SlideupPage'
+import EmailForm from '../EmailForm/EmailForm'
 
 const DetailsWrapper = ({ data, handleClick }) => {
     return (
@@ -52,7 +53,11 @@ const Contact = ({setApp}) => {
 
     return(
         <>
-        {scaledown && <SlideupPage setScale={setScale} />}
+        {scaledown && 
+            <SlideupPage setScale={setScale} title={"New Message"}>
+                <EmailForm />
+            </SlideupPage>   
+        }
 
         <div ref={parentRef} className='contact-page' style={{animation: 'openApp 0.2s', transform: scaledown && `scale(0.9)`, borderRadius: scaledown && '10px', transition: `transform 0.25s ease`, filter: scaledown && `brightness(80%)`}}>
             {showToast && <Toast setToast={setToast} />}

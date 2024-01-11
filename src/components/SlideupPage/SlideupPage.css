@@ -9,12 +9,27 @@
     z-index: 99;
     border-radius: 10px;
     animation: slideup-animation 0.25s;
-    padding: 8px 16px;
+}
+
+.slideup-header{
+    width: 100%;
+    height: 30px;
+    padding: 16px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.slideup-header p {
+    color: #303030;
 }
 
 .cancel-button {
     color: #0277b5;
     cursor: pointer;
+    position: absolute;
+    right: 10px;
 }
 
 .slideup-page-close{
